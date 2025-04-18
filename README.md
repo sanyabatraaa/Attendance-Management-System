@@ -52,7 +52,7 @@ Each attendance entry captures the user's location in the background—ensuring 
 ---
 
 ## 👥 Contributors  
-- **[Your Name]**  
+- **Sanya Batra**  
 - **Yashik Khanna**
 
 ---
