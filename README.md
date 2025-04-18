@@ -1,6 +1,3 @@
-Here’s a polished and professional version of your project description tailored for a GitHub README:
-
----
 
 # 📌 Attendance Management System  
 ### 🔹 Transforming Remote Work Attendance with Innovation & Technology! 🚀  
