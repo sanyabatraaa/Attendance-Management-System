@@ -40,7 +40,7 @@ Each attendance entry captures the user's location in the background—ensuring 
 
 ## 🔗 Live Demo Links  
 - 👤 **Employee Portal:** https://attendence-management-employee.netlify.app
-- 🛠 **Admin Panel:** [https://lnkd.in/gyHNPYpV](https://lnkd.in/gyHNPYpV)  
+- 🛠 **Admin Panel:** https://attendence-management-admin.netlify.app 
 
 ### 🔐 Admin Login Credentials  
 - **Email:** `qwe@gmail.com`  
