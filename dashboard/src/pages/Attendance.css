@@ -1,0 +1,41 @@
+.attendance-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .date-picker-container {
+    margin-bottom: 20px;
+  }
+  
+  .attendance-list {
+    margin-top: 20px;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .attendance-table th, .attendance-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .attendance-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .attendance-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .attendance-table tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }

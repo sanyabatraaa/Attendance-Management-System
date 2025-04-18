@@ -1,0 +1,145 @@
+/* General Navbar Styling */
+nav {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0; /* Ensure it spans the entire width */
+    padding: 5px 7px; /* Reduced padding */
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    z-index: 999; /* Keeps navbar above other content */
+    background-color: #ffcc00; /* Solid background for visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    height: fit-content;
+  }
+  
+  @media (max-width: 1100px) {
+    nav {
+      background: #ffffffbf; /* Semi-transparent background for mobile */
+      padding: 10px 20px; /* Reduced padding for mobile */
+    }
+  
+    /* Hide nav links by default in mobile view */
+    nav .navLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; /* Reduced gap between links */
+      width: 100%;
+    }
+  
+    nav .hamburger {
+      display: block;
+    }
+    
+    nav .navLinks.showmenu {
+      display: flex;
+      position: absolute;
+      top: 100%; /* Position the menu just below the navbar */
+      left: 0;
+      right: 0;
+      background: #fff; /* Ensure menu has a solid background */
+      padding: 15px 0; /* Reduced padding */
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Optional shadow */
+      z-index: 1;
+    }
+  }
+  
+  /* Logo styling */
+  nav .logo {
+    flex: 1;
+  }
+  
+  nav .logo .logo-img {
+    width: 120px; /* Reduced logo size */
+    height: auto;
+  }
+  
+  /* Navbar Links */
+  nav .navLinks {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  nav .navLinks .links {
+    display: flex;
+    gap: 15px; /* Reduced gap between links */
+  }
+  
+  nav .navLinks .links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px; /* Reduced font size */
+    font-weight: 600;
+    letter-spacing: 1px; /* Slightly reduced letter spacing */
+  }
+  
+  nav .navLinks .links a:hover {
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  /* Button Styles */
+  nav .btn {
+    padding: 6px 15px; /* Reduced padding */
+    color: #e5e5e5;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px; /* Reduced font size */
+    font-weight: 600;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  nav .logoutBtn,
+  nav .loginBtn {
+    background: linear-gradient(135deg, black, rgb(49, 49, 49));
+  }
+  
+  /* Hamburger Icon */
+  nav .hamburger {
+    display: none;
+  }
+  
+  nav .hamburger svg {
+    font-size: 1.75rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Navbar for small screens */
+  @media (max-width: 1100px) {
+    nav .navLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; /* Reduced gap between links */
+      width: 100%;
+    }
+  
+    nav .hamburger {
+      display: block;
+    }
+  
+    nav .navLinks.showmenu {
+      display: flex;
+      position: absolute;
+      top: 100%; /* Dropdown below navbar */
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 15px 0; /* Reduced padding */
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  }
+  

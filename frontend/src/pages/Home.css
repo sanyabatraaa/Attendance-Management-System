@@ -1,0 +1,86 @@
+.home-page {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark grey for text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 80px auto; /* Increased top margin to avoid overlap with navbar */
+  border: 1px solid #ccc; /* Light grey border */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #ffcc00; /* Yellow */
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+strong {
+  color: #555; /* Medium grey */
+}
+
+h2 {
+  color: #333; /* Dark grey */
+  margin-top: 30px;
+}
+
+button {
+  background-color: #ffcc00; /* Yellow */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e6b800; /* Darker yellow */
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #cc9900; /* Even darker yellow */
+}
+
+/* Video Styling */
+.video-feed {
+  width: 100%; /* Ensures the video fits within the container */
+  max-width: 100%; /* Prevents overflow */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Captured Image Styling */
+.captured-preview {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}

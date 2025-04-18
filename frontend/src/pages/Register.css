@@ -1,0 +1,135 @@
+/* General Styles for Registration Form */
+.register-form {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading and Title */
+.register-form h2 {
+  color: gray;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.register-form p {
+  max-width: 750px;
+  color: gray;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Layout */
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.register-form form div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow inputs to wrap on smaller screens */
+}
+
+/* Input Fields */
+.register-form form input,
+.register-form form select,
+.register-form form textarea {
+  flex: 1;
+  font-size: 16px; /* Reduced font size for better scaling */
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  background: white; /* Ensure white background for inputs */
+  box-sizing: border-box; /* Include padding and border in the width */
+  width: 100%; /* Ensure inputs take full width of their container */
+}
+
+/* Placeholder Styling */
+.register-form form input::placeholder,
+.register-form form textarea::placeholder {
+  color: #888; /* Light gray placeholder text */
+  opacity: 1; /* Ensure placeholders are visible */
+  font-size: 14px; /* Placeholder font size */
+}
+
+/* Input Focus Styling */
+.register-form form input:focus,
+.register-form form select:focus,
+.register-form form textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #f1c40f; /* Highlight input on focus */
+  box-shadow: 0 0 5px rgba(241, 196, 15, 0.5); /* Add a subtle shadow */
+}
+
+/* Register Section Styling */
+.register-form .register-section {
+  display: flex;
+  justify-content: space-between; /* Space between text/link and button */
+  align-items: center;
+  gap: 10px; /* Add some spacing between elements */
+}
+
+/* Button Styling */
+.register-form button {
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: bold;
+  width: 50%; /* Button width is set to 50% of the form's width */
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #f1c40f; /* Yellow button color */
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth transition effect */
+  text-align: center;
+}
+
+.register-form button:hover {
+  background: #d4a807; /* Darker yellow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 888px) {
+  .register-form form div {
+    flex-direction: column; /* Stack inputs on smaller screens */
+  }
+}
+
+@media (max-width: 667px) {
+  .register-form form input,
+  .register-form form select,
+  .register-form form textarea {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .register-form button {
+    width: 100%; /* Button takes full width for smaller screens */
+    max-width: 90%; /* Allow it to scale down slightly */
+  }
+}
+
+@media (max-width: 600px) {
+  .register-form form {
+    width: 100%; /* Full width form for very small screens */
+  }
+}
+
+@media (max-width: 485px) {
+  .register-form {
+    padding: 30px 0;
+  }
+
+  .register-form button {
+    width: 100%; /* Full width button for very small screens */
+    max-width: 100%; /* No restriction on width */
+  }
+}

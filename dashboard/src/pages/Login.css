@@ -1,0 +1,132 @@
+/* General Styles for Registration Form */
+.form-component {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+   
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  
+  /* Form Heading */
+  .form-component h2 {
+    color: black; /* Heading in black */
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Container */
+  .form-component form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    align-items: center; /* Center align form items */
+    background: #ffffff; /* Form background */
+    padding: 30px; /* Padding around form content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Input Fields */
+  .form-component form input,
+  .form-component form select {
+    width: fit-content;
+    font-size: 18px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+  }
+  
+  .form-component form input[type="date"] {
+    padding: 12px 10px; /* Adjust padding for the date input */
+  }
+  
+  /* Button Styling */
+  .form-component button {
+    padding: 12px 0;
+    color: #fff;
+    font-weight: bold;
+    width: 200%; /* Button spans the full width */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #f1c40f; /* Yellow button color */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .form-component button:hover {
+    background: #d4ac0d; /* Darker yellow on hover */
+  }
+  
+  /* Register Section (p and a tags) */
+  .form-component .register-section {
+    display: flex; /* Enables row alignment */
+    justify-content: flex-start; /* Aligns text to the left */
+    align-items: center; /* Aligns items vertically in the center */
+    font-size: 14px; /* Small font size for consistency */
+    color: gray; /* Text color */
+    width: 100%;
+    margin-top: -10px; /* Adjust spacing if needed */
+    gap: 5px; /* Space between the paragraph and link */
+  }
+  
+  .form-component .register-section p {
+    margin: 0; /* Removes the default margin for consistency */
+    color: gray; /* Gray text color */
+  }
+  
+  .form-component .register-section a {
+    color: #7d47cf; /* Purple color for link */
+    font-weight: bold; /* Bold for better visibility */
+    text-decoration: none; /* Removes underline from the link */
+  }
+  
+  .form-component .register-section a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .form-component form {
+      width: 90%; /* Make form responsive */
+    }
+  
+    .form-component h2 {
+      font-size: 28px; /* Smaller heading size for smaller screens */
+    }
+  
+    .form-component button {
+      font-size: 16px; /* Adjust button size for smaller screens */
+    }
+  
+    .form-component form input,
+    .form-component form select {
+      font-size: 16px; /* Adjust input font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-component h2 {
+      font-size: 24px; /* Further reduce heading size */
+    }
+  
+    .form-component button {
+      font-size: 14px; /* Reduce button font size */
+      padding: 10px 0;
+    }
+  
+    .form-component .register-section {
+      font-size: 12px; /* Smaller text for the register section */
+    }
+  }
+  

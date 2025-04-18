@@ -1,0 +1,115 @@
+#footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Center everything horizontally */
+  position: absolute;
+  left: 0;
+  right: 0;
+  flex-direction: column;   /* Stack content vertically */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;   /* Stack content vertically */
+  align-items: center;      /* Center content horizontally */
+  justify-content: center;  /* Center content vertically */
+  text-align: center;       /* Center text */
+  width: 100%;
+  max-width: 1200px;        /* Max-width for cleaner design */
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Center content in each section */
+  margin-bottom: 1vmax;    /* Space between sections */
+}
+
+.footer-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.footer-summary {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-top: 5px;
+}
+
+.footer-tagline {
+  font-size: 18px;
+  color: #f39c12;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  color: #f1c40f;
+}
+
+.footer-right p {
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;  /* Center social icons */
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon.linkedin:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+
+.icon.github:hover {
+  color: #333;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;  /* Ensure footer bottom is centered */
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bbb;
+}
+.icon.resume {
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+  margin-right: 10px;
+}
+
+.icon.resume:hover {
+  color: #e74c3c; /* You can choose another color */
+  transform: scale(1.2);
+}
+
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row; /* Arrange items in a row on larger screens */
+    justify-content: space-between;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    align-items: flex-start;  /* Align sections to the left */
+    margin-bottom: 0;         /* Remove bottom margin on larger screens */
+  }
+}
